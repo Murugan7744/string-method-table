@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+		<html>
+			<head>
+				<title>String-method-Table</title>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				<style>
+					table,th,td{
+					    border:2px solid black;
+						border-collapse:collapse;
+					    margin:auto;
+						text-align:center;	
+					}
+				
+				</style>
+			</head>
+			<body>
+				<table>
+					<caption>array methods table</caption>
+						<tr>
+							<th>Method</th>
+							<th>Perform Working</th>
+							<th>Example</th>
+							<th>Output</th>
+						</tr>
+						<tr>
+							<td rowspan="4">CharAt()</td>
+							<td rowspan="4">Method return a charactor specified index (position) in a string</td>
+							<td>let a="Hai Madam"<br>const b=a.charAt(0); <br>document.write(b);</td>
+							<td> h</td>
+						</tr>
+						<tr>
+						
+							
+							<td>let a="23, 24, 25, 26"<br>const b=a.charAt(13); <br>document.write(b);</td>
+							<td> 6</td>
+						</tr>
+						<tr>
+							<td>let a="2345, 945, 37"<br>const b=a.charAt(6.5); <br>document.write(b);</td>
+							<td> 9</td>
+						</tr>
+						<tr>
+							<td>let a="2345, 345, 12433"<br>const b=a.charAt(a.length -3); <br>document.write(b);</td>
+							<td> 4</td>
+						</tr>
+						<tr>
+							<td rowspan="4">CharCodeAt()</td>
+							<td rowspan="4">method returns the Unicode of the character at a specified index (position) in a string.</td>
+							<td>let a="Hai Madam"<br>const b=a.charAt(0); <br>document.write(b);</td>
+							<td> 72</td>
+						</tr>
+						<tr>
+							<td>let a="23, 24, 25, 26"<br>const b=a.charAt(3); <br>document.write(b);</td>
+							<td> 108</td>
+						</tr>
+						<tr>
+							<td>let a="2345, 345, 33"<br>const b=a.charAt(-1); <br>document.write(b);</td>
+							<td> 109</td>
+						</tr>
+						<tr>
+							<td>let a="2345, 345, 12433"<br>const b=a.charAt(a.length -1); <br>document.write(b);</td>
+							<td> NAN</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Concat()</td>
+							<td rowspan="3">Method return a charactor specified index (position) in a string</td>
+							<td>let a="Hello Madam 23,345";<br>let b="hai,234,345,76"<br>const c=a.concat(b);
+									<br>document.write(c);</td>
+							<td> Hello Madam 23,345hai,234,345,76</td>
+						</tr>
+						<tr>
+							<td>let a="Hello boss 23,345";<br>let b="hai,234,345,76"<br>let c="flower,290,645,786 ";<br>const d=a.concat(b,c);
+									<br>document.write(a,b);</td>
+							<td> Hello boss 23,345hai,234,345,76</td>
+						</tr>
+						<tr>
+							<td>let a="bike number 23,345";<br>let b="car number,234,345,76"<br>let c="flower,290,645,786 ";<br>const d=a.concat(b,c);
+									<br>document.write(a,b,c,d);</td>
+							<td> bike number 23,345car number,234,345,76flower,290,645,786 bike number 23,345car number,234,345,76flower,290,645,786</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Length()</td>
+							<td rowspan="2">property returns the length of a string.</td>
+							<td>let a="Hello boss"<br>const b=a.length; <br>document.write(b);</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>let a="22345, 234"<br> const b=a.length; <br>document.write(b);</td>
+							<td> 10</td>
+						</tr>
+						<tr>
+							<td rowspan="3">slice()</td>
+							<td rowspan="3"> method extracts a part of a string.</td>
+							<td>let a="muruganmurali"<br>const b=a.slice(6); <br>document.write(b);</td>
+							<td>murali</td>
+						</tr>
+						<tr>
+							<td>let a="cricet score";<br> const b=a.slice(-3,4);<br> console.log(b);</td>
+							<td> cricet</td>
+						</tr>
+						<tr>
+							<td>let a="2345345"<br>const b=a.charAt(3,2); <br>document.write(b);</td>
+							<td>45</td>
+						</tr>
+						<tr>
+							<td>substring()</td>
+							<td> method extracts characters, between two indices (positions), from a string, and returns the substring.</td>
+							<td>let a="caret,Onion, potato"<br>const b=a.slice(4,8); <br>document.write(b);</td>
+							<td>t,o</td>
+						</tr>
+						<tr>
+							<td>substr()</td>
+							<td>  method begins at a specified position, and returns a specified number of chara</td>
+							<td>let a="caret,Onion, potato"<br>const b=a.slice(-4,3); <br>document.write(b);</td>
+							<td>nio</td>
+						</tr>
+						<tr>
+							<td>replace()</td>
+							<td> method returns a new string with the value(s) replaced.</td>
+							<td>let a="i going form chennai"<br>const b=a.replace("chennai","going"); <br>document.write(b);</td>
+							<td>i going form going</td>
+						</tr>
+						<tr>
+						<td>replace()</td>
+							<td> method returns a new string with the value(s) replaced.</td>
+							<td>let a="red,blue,yellow,green";<br> const b=a.replace(score);<br> console.log(b);</td>
+							<td> green yellow blue red</td>
+						</tr>
+						<tr>
+							<td>replaceAll()</td>
+							<td> method returns a new string with the value(s) replaced.</td>
+							<td>var x="rotation,diversion";<br>var y=x.replaceAll("rotation","No");<br>var y=x.replaceAll("diversion","no"); <br>document.write(y);</td>
+							<td>rotation no</td>
+						</tr>
+						<tr>
+							<td>toUpperCase()</td>
+							<td>  method converts a string to uppercase letters.</td>
+							<td>var a="hardley davidson!";<br>var b=a.toUpperCase();<br><br>document.write(b);</td>
+							<td>HARDLEY DAVIDSON!</td>
+						</tr>
+						<tr>
+							<td>tolowerCase()</td>
+							<td>method converts a string to lowercase letters.</td>
+							<td>var a="HARDLEY DAVIDSONQ";<br>var b=a.toUpperCase();<br><br>document.write(b);</td>
+							<td>hardley davidson!</td>
+						</tr>
+						<tr>
+							<td>String trim()</td>
+							<td>method removes whitespace from both sides of a string.</td>
+							<td>var x="           flowers love           ";<br>var y=x.trim();<br><br>document.write(y);</td>
+							<td>flowers love</td>
+						</tr>
+						<tr>
+							<td>String trimStart()</td>
+							<td>method removes whitespace from the beginning of a string</td>
+							<td>var x="   murali     ";<br>var y=x.trimStart();<br><br>document.write(y);</td>
+							<td>murali</td>
+						</tr>
+						<tr>
+							<td>String trimEnd()</td>
+							<td>method removes whitespace from the end of a string.</td>
+							<td>var x="   murali     ";<br>var y=x.trimEnd();<br><br>document.write(y);</td>
+							<td>murali</td>
+						</tr>
+						<tr>
+							<td>String padStart()</td>
+							<td>method pads a string from the start..</td>
+							<td>var x="9";<br>var y=x.padStart8,"6");<br><br>document.write(y);</td>
+							<td>6666669</td>
+						</tr>
+						<tr>
+							<td>String padEnd()</td>
+							<td> method pads a string at the end.</td>
+							<td>var x="8";<br>var y=x.padEnd(8,"5");<br><br>document.write(y);</td>
+							<td>555558</td>
+						</tr>
+						
+						<tr>
+							<td>Split()</td>
+							<td>method splits a string into an array of substrings.</td>
+							<td>var x="A,B,C,D,E";<br>var y=x.split();<br><br>document.write(y);</td>
+							<td>['A,B,C,D,E']</td>
+						</tr>
+						
+						
+						
+						</table>
+		
+			</body>
+		</html>
+		
+		
